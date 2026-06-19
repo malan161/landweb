@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.admin-header {
+  border-bottom: 1px solid #1a1a1a;
+  padding: 16px 0;
+}
+
+.admin-header__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-header h1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.admin-header h1 span {
+  color: #555;
+  font-weight: 400;
+}
+
+.admin-header a {
+  color: #666;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s;
+}
+
+.admin-header a:hover {
+  color: #fff;
+}
+
+.admin-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.admin-stat-card {
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.admin-stat-card__value {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.admin-stat-card__label {
+  font-size: 13px;
+  color: #555;
+  margin-top: 4px;
+}
+
+.admin-section {
+  background: #0d0d0d;
+  border: 1px solid #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.admin-section__header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #1a1a1a;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.admin-message {
+  padding: 16px 24px;
+  border-bottom: 1px solid #111;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.admin-message:last-child {
+  border-bottom: none;
+}
+
+.admin-message__badge {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 100px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.admin-message__badge--user {
+  background: rgba(255,255,255,0.1);
+  color: #fff;
+}
+
+.admin-message__badge--bot {
+  background: rgba(255,255,255,0.05);
+  color: #666;
+}
+
+.admin-message__body {
+  flex: 1;
+}
+
+.admin-message__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.admin-message__time {
+  font-size: 12px;
+  color: #444;
+  margin-top: 4px;
+}
+
+.admin-empty {
+  padding: 48px 24px;
+  text-align: center;
+  color: #444;
+  font-size: 14px;
+}
+
+.admin-delete-btn {
+  background: none;
+  border: 1px solid #2a2a2a;
+  color: #555;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.admin-delete-btn:hover {
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+@media (max-width: 768px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+}

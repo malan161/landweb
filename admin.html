@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logvis — Админ панель</title>
+  <link rel="stylesheet" href="css/admin.css" />
+</head>
+<body>
+  <header class="admin-header">
+    <div class="admin-header__inner">
+      <h1>Logvis <span>/ Админ панель</span></h1>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <span id="serverStatus" style="font-size:12px;color:#555;display:flex;align-items:center;gap:6px;">⚪ Сервер</span>
+        <a href="index.html">← На сайт</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="admin-main">
+    <div class="admin-stats">
+      <div class="admin-stat-card">
+        <div class="admin-stat-card__value" id="totalMessages">0</div>
+        <div class="admin-stat-card__label">Всего сообщений</div>
+      </div>
+      <div class="admin-stat-card">
+        <div class="admin-stat-card__value" id="userMessages">0</div>
+        <div class="admin-stat-card__label">От клиентов</div>
+      </div>
+      <div class="admin-stat-card">
+        <div class="admin-stat-card__value">24/7</div>
+        <div class="admin-stat-card__label">Поддержка</div>
+      </div>
+    </div>
+
+    <div class="admin-section" style="margin-bottom: 24px;">
+      <div class="admin-section__header">Ответить клиенту</div>
+      <form id="replyForm" style="padding: 16px 24px; display: flex; gap: 8px;">
+        <input
+          id="replyInput"
+          type="text"
+          placeholder="Напишите ответ..."
+          style="flex: 1; background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 8px; padding: 10px 14px; color: #fff; font-size: 14px; outline: none;"
+        />
+        <button type="submit" style="background: #fff; color: #000; border: none; border-radius: 8px; padding: 10px 20px; font-weight: 600; font-size: 14px; cursor: pointer;">
+          Отправить
+        </button>
+      </form>
+    </div>
+
+    <div class="admin-section">
+      <div class="admin-section__header">Сообщения</div>
+      <div id="messagesList"></div>
+    </div>
+  </main>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>

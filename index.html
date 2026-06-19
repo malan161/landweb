@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logvis — Разработка сайтов, приложений и чат-ботов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#hero" class="logo">Logvis<span>.</span></a>
+        <nav class="nav" id="nav">
+          <a href="#directions">Направления</a>
+          <a href="#why">Почему мы</a>
+          <a href="#process">Процесс</a>
+          <a href="#pricing">Цены</a>
+          <a href="#contacts">Контакты</a>
+          <a href="#hero" class="nav-cta">Заказать</a>
+        </nav>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Меню">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <div class="hero__bg-grid"></div>
+      <div class="hero__bg-glow"></div>
+    </div>
+    <div class="container" style="position:relative;z-index:1;width:100%;">
+      <div class="hero__content">
+        <h1>
+          Создаем цифровые<br />
+          продукты, которые <em>работают</em>
+        </h1>
+        <p>
+          Logvis — студия разработки сайтов, веб-приложений и чат-ботов
+          для Telegram и Max. От лендинга до полноценной платформы.
+        </p>
+        <div class="hero__actions">
+          <a href="#pricing" class="btn btn-primary">Посмотреть цены</a>
+          <a href="#contacts" class="btn btn-secondary">Связаться с нами</a>
+        </div>
+        <div class="hero__stats">
+          <div>
+            <div class="hero__stat-value">120+</div>
+            <div class="hero__stat-label">Проектов запущено</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">50+</div>
+            <div class="hero__stat-label">Довольных клиентов</div>
+          </div>
+          <div>
+            <div class="hero__stat-value">4.9</div>
+            <div class="hero__stat-label">Средний рейтинг</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Directions -->
+  <section class="section" id="directions">
+    <div class="container">
+      <div class="section-label">Направления</div>
+      <h2 class="section-title">Что мы создаем</h2>
+      <div class="directions-grid">
+        <div class="direction-card">
+          <div class="direction-card__icon">🌐</div>
+          <h3>Сайты</h3>
+          <p>Лендинги, корпоративные сайты, интернет-магазины на современном стеке с адаптивным дизайном.</p>
+          <div class="arrow">→</div>
+        </div>
+        <div class="direction-card">
+          <div class="direction-card__icon">📱</div>
+          <h3>Приложения</h3>
+          <p>Веб-приложения и PWA с удобным интерфейсом, высокой скоростью и масштабируемой архитектурой.</p>
+          <div class="arrow">→</div>
+        </div>
+        <div class="direction-card">
+          <div class="direction-card__icon">🤖</div>
+          <h3>Чат-боты</h3>
+          <p>Автоматизация продаж и поддержки в Telegram и Max. Интеграция с CRM и платежными системами.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-label">Преимущества</div>
+      <h2 class="section-title">Почему выбирают нас</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon">⚡</div>
+          <h3>Быстро</h3>
+          <p>Запускаем лендинги от одного дня. Четкие сроки без затягивания.</p>
+          <div class="highlight">От 1 дня</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🎨</div>
+          <h3>Индивидуально</h3>
+          <p>Никаких шаблонов. Разрабатываем уникальный дизайн под ваш бизнес.</p>
+          <div class="highlight">Уникальный дизайн</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">📊</div>
+          <h3>Прозрачно</h3>
+          <p>Фиксированные этапы, сроки и стоимость. Регулярные отчеты о прогрессе.</p>
+          <div class="highlight">Фиксированные этапы</div>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🚀</div>
+          <h3>Под ключ</h3>
+          <p>Полный цикл — от идеи до продвижения. Дизайн, разработка, хостинг, поддержка.</p>
+          <div class="highlight">От идеи до продвижения</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section-label">Процесс работы</div>
+      <h2 class="section-title">Как мы работаем</h2>
+      <div class="process-grid">
+        <div class="process-card">
+          <div class="process-card__number">01</div>
+          <h4>Обсуждение задачи</h4>
+          <p>Анализируем цели, целевую аудиторию и требования к проекту.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__number">02</div>
+          <h4>Прототип</h4>
+          <p>Создаем структуру будущего сайта и пользовательские сценарии.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__number">03</div>
+          <h4>Дизайн</h4>
+          <p>Разрабатываем уникальный интерфейс и визуальную концепцию.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__number">04</div>
+          <h4>Разработка</h4>
+          <p>Верстаем и программируем на современном технологическом стеке.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__number">05</div>
+          <h4>Тестирование</h4>
+          <p>Проверяем скорость, корректность работы и кросс-браузерность.</p>
+        </div>
+        <div class="process-card">
+          <div class="process-card__number">06</div>
+          <h4>Запуск</h4>
+          <p>Переносим на хостинг, настраиваем домен и обучаем работе.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-label">Цены</div>
+      <h2 class="section-title">Примерная стоимость</h2>
+      <p class="section-subtitle">Точная цена зависит от сложности задачи. Это ориентиры для старта.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-card__name">Лендинг</div>
+          <div class="pricing-card__price">от 2 500 ₽</div>
+          <ul class="pricing-card__features">
+            <li>Уникальный дизайн</li>
+            <li>Адаптивная верстка</li>
+            <li>Форма захвата</li>
+            <li>Базовая SEO-оптимизация</li>
+          </ul>
+          <a href="#contacts" class="btn btn-primary">Заказать</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__name">Чат-бот</div>
+          <div class="pricing-card__price">от 2 000 ₽</div>
+          <ul class="pricing-card__features">
+            <li>Telegram / Max</li>
+            <li>Сценарии диалогов</li>
+            <li>Интеграция с CRM</li>
+            <li>Аналитика сообщений</li>
+          </ul>
+          <a href="#contacts" class="btn btn-primary">Заказать</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-card__name">Приложение</div>
+          <div class="pricing-card__price">от 6 900 ₽</div>
+          <ul class="pricing-card__features">
+            <li>SPA / PWA</li>
+            <li>Личный кабинет</li>
+            <li>Админ панель</li>
+            <li>API интеграции</li>
+          </ul>
+          <a href="#contacts" class="btn btn-primary">Заказать</a>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-card__name">Полноценный сайт</div>
+          <div class="pricing-card__price">от 9 800 ₽</div>
+          <ul class="pricing-card__features">
+            <li>Многостраничность</li>
+            <li>Админка / CMS</li>
+            <li>Каталог / Магазин</li>
+            <li>Платежная система</li>
+          </ul>
+          <a href="#contacts" class="btn btn-primary">Заказать</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacts -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="section-label">Контакты</div>
+      <h2 class="section-title">Свяжитесь с нами</h2>
+      <p class="section-subtitle">Напишите в удобный мессенджер — мы ответим в течение часа.</p>
+      <div class="contacts-grid">
+        <a href="https://t.me/logvis" target="_blank" class="contact-card" rel="noopener">
+          <div class="contact-card__icon">✈️</div>
+          <h4>Telegram</h4>
+          <p>@logvis</p>
+        </a>
+        <a href="https://max.ru/logvis" target="_blank" class="contact-card" rel="noopener">
+          <div class="contact-card__icon">💬</div>
+          <h4>Max</h4>
+          <p>@logvis</p>
+        </a>
+        <a href="mailto:info@logvis.ru" class="contact-card">
+          <div class="contact-card__icon">📧</div>
+          <h4>Email</h4>
+          <p>info@logvis.ru</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chat Section (inline) -->
+  <section class="section" id="chat-section">
+    <div class="container">
+      <div class="section-label">Онлайн чат</div>
+      <h2 class="section-title">Напишите нам прямо сейчас</h2>
+      <p class="section-subtitle">Ответим в течение нескольких минут</p>
+      <div class="inline-chat">
+        <div class="inline-chat__messages" id="chatMessagesInline"></div>
+        <div class="inline-chat__input">
+          <input type="text" id="chatInputInline" placeholder="Напишите сообщение..." autocomplete="off" />
+          <button id="chatSendInline">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <p>&copy; 2026 Logvis. Все права защищены.</p>
+        <a href="admin.html">Админ панель</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <div class="chat-panel" id="chatPanel">
+      <div class="chat-header">
+        <div>
+          <h4>Чат с Logvis</h4>
+          <div class="chat-header-status">Онлайн</div>
+        </div>
+      </div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input-area">
+        <input type="text" id="chatInput" placeholder="Напишите сообщение..." autocomplete="off" />
+        <button id="chatSend">Отправить</button>
+      </div>
+    </div>
+    <button class="chat-toggle" id="chatToggle" aria-label="Чат">💬</button>
+  </div>
+
+  <!-- Admin badge -->
+  <div class="admin-badge">
+    <a href="admin.html">⚙️ Управление</a>
+  </div>
+
+  <script src="js/chat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
