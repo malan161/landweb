@@ -56,6 +56,15 @@ const server = http.createServer(app);
 
 app.use(express.json());
 
+// Redirect logvis.ru -> www.logvis.ru
+app.use((req, res, next) => {
+  const host = req.headers.host;
+  if (host && host === 'logvis.ru') {
+    return res.redirect(301, `https://www.logvis.ru${req.url}`);
+  }
+  next();
+});
+
 // Admin auth middleware (simple) — must be BEFORE static
 const ADMIN_USER = process.env.ADMIN_USER;
 const ADMIN_PASS = process.env.ADMIN_PASS;
